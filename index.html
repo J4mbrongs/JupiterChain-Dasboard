@@ -1,64 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>JupiterChain Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: linear-gradient(to right, #e0eafc, #cfdef3);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 2rem;
-    }
-
-    h1 {
-      color: #333;
-      font-size: 2rem;
-    }
-
-    .card {
-      background: white;
-      padding: 2rem;
-      border-radius: 1.5rem;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      max-width: 500px;
-      text-align: left;
-      margin-top: 1rem;
-    }
-
-    .data p {
-      font-size: 1.2rem;
-      margin: 0.75rem 0;
-      color: #444;
-    }
-
-    .footer {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiterchain Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
 </head>
 <body>
-  <h1>📡 JupiterChain Dashboard</h1>
-  <div class="card data">
-    <p id="blockNumber">⛓️ Block Number: loading...</p>
-    <p id="balance">💰 Balance: loading...</p>
-    <p id="gasPrice">⛽ Gas Price: loading...</p>
-    <p id="walletAddress">👛 Wallet: not connected</p>
-    <button id="connectButton">🔌 Connect Wallet</button>
-  </div>
-  <div class="footer">
-    Live update setiap 15 detik.
-  </div>
-
-  <script src="main5g.js"></script>
+    <div class="container">
+        <h1>Jupiterchain Dashboard</h1>
+        <div class="card">
+            <p><strong>Block Number:</strong> <span id="blockNumber">Loading...</span></p>
+            <p><strong>Balance:</strong> <span id="balance">Loading...</span></p>
+            <p><strong>Gas Price:</strong> <span id="gasPrice">Loading...</span></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
